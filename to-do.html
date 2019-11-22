@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<div id="grad">
+<head>
+  <link rel="stylesheet" type="text/css" href="">
+  <style>
+	#grad
+	{
+	height:1000px;
+	background-image: linear-gradient(to bottom right, red, yellow);
+	}
+	h2
+	{
+	font-size:40px;
+	color:white;
+	font-family:courier new;
+	}
+	#grad1
+	{
+		background-color:white;
+		margin-left:677px;
+		margin-right:550px;
+	}
+	</style>
+</head>
+<body>
+<h2><center><u>TO DO LIST</u></center></h2>
+<div id="grad1">
+<center>
+	<input type="text" id="RemoveName" placeholder="Enter Task Here">
+	<input id="btn" class="b1" type="Button" value="button"  name="">
+	<input id="btn1" class="b1" type="Button"  value="Remove">
+	<p id="demo" >
+    <ul id="list" type="none";>
+  	</ul>
+	<script type="text/javascript">
+    var z=document.getElementById('btn');
+    console.log(z);
+    z.addEventListener('click',Insert);
+		function Insert() {
+			var a =document.getElementById("RemoveName").value;
+		var para=document.createElement("li");
+		var node=document.createTextNode(a);
+		para.appendChild(node);
+		para.id=a;
+		var element =document.getElementById('list');
+		element.appendChild(para);
+    document.getElementById("RemoveName").value="";
+		}
+	</script>
+	</div>
+</body>
+</center>
+</div>
+</html>
